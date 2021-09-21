@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script language=javascript>
+        function diaplay_c() {
+            mytime = setTimeout(dsiplay_c(), 1)
+        }
+
+        function display() {
+            var x = new Date()
+            var x1 = x.getDay() + "/" + x.getMonth() + "/" + x.getFullYear()
+            var x2 = x1 + "---" + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds()
+            document.getElementById('ct').innerHTML = x2
+            display_c()
+        }
+    </script>
+</head>
+
+<body onload=display()>
+    <span id='ct' style="background-color: bisque;"></span>
+</body>
+
+</html>

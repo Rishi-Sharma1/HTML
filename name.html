@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function fullname(){
+var name=frm.a1.value+" "+frm.a2.value
+frm.a3.value=name;
+}
+</script>
+</head>
+<body>
+<h2>Name representer</h2>
+<form name=frm>
+<table border=4 color=yellow>
+<tr>
+<td>Enter First Name:</td>
+<td><input type=text name=a1></td>
+<tr>
+<td>Enter Second Name:</td>
+<td><input type=text name=a2></td>
+<tr align=center>
+<td COLSPAN=2><input type=button value="Proceed" onclick=fullname()></td>
+<tr>
+<td>Full Name:</td>
+<td><input type=text name=a3 readonly></td>
+</table>
+</form>
+</body>
+</html>

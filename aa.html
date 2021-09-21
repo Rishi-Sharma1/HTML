@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>Pay Slip</h1>
+            <form name=frm>
+                <table border=4>
+                    <tr>
+                        <td>Enter employee name:</td><td><input type=text name=a1></td>
+                    </tr>
+                    <tr>
+                        <td>Enter employee DOB:</td><td><input type=text name=a2></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Phone Number</td><td><input type=text name=a3></td>
+                    </tr>
+                    <tr>
+                        <td>Enter the basic pay</td><td><input type=text name=a4></td>   
+                    </tr>
+                    <tr>
+                        <td>Housing Rent</td><td><input type=text name=a5></td>
+                    </tr>
+                    <tr colspan=1>
+                        <td><input type=button value="Net Amount" onclick=net()></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </center>
+        <script language=javascript>
+            function net(){
+                n=frm.a1.value
+                bp=frm.a4.value
+                hr=frm.a5.value
+                t=parseInt(frm.a4.value)+parseInt(frm.a5.value)
+                document.write("NAME = "+n+"\n")
+                document.write("Basic Pay = "+bp)
+                document.write("Your net payment = "+t)
+            }
+        </script>
+    </body>      
+</html>

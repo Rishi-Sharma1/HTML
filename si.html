@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<form name=frm>
+Principal:<input type=text name=a1><br>
+Rate:<input type=text name=a2><br>
+Time(in years):<input type=text name=a3><br>
+<input type=button value="Calculate" onclick=calc()><br>
+Interest:<input type=text name=a4 readonly><br>
+Simple Interest:<input type=text name=a5 readonly><br>
+</form>
+<script language=javascript>
+function calc(){
+frm.a4.value=(frm.a1.value*frm.a2.value*frm.a3.value)/100
+frm.a5.value=(frm.a1.value+frm.a4.value)
+}
+</script>
+</body>
+</html>

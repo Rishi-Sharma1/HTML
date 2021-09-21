@@ -1,0 +1,47 @@
+<html>
+<head><title>Temperature Converter</title>
+<script type="text/javascript">
+function calc(){
+var opt=frm.myoption.value
+if(opt=="F")
+ {
+   var x=frm.a1.value
+   if(isNaN(val))
+	{alert("Not a number")}
+   else
+	{
+	  var tc=(val-32)*5/9
+	  frm.a2.value=tc
+ 	}
+ }
+else
+ {
+    var x=frm.a1.value
+    if(isNaN(val))
+	{alert("Not a number")}
+   else
+	{
+	  var tf=(val*5/9)+32
+	  frm.a2.value=tf+"F"
+ 	}
+ }
+}
+</script>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<form name=frm>
+<table border=4 color=blue>
+<tr>
+<td>Enter the degree</td>
+<td><input type=text name=a1></td>
+<td><select name=myoption><option name="Faren" value="F">F</option><option name="Cels" value="C">C</option></select></td>
+<td><input type=button value=Calculate onclick="calc()"></td>
+</tr>
+<tr>
+<td>Equal Value</td>
+<td><input type=text name="a2" readonly></td>
+</table>
+</form>
+</body>
+<html>

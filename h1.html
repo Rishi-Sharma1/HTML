@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script language=javascript>
+         function process()
+         {
+             p=dfc.pp.value
+             r=dfc.rr.value
+             t=dfc.tt.value
+             i=p*r*t/100
+             dfc.prt.value=i
+         }
+        </script>
+    </head>
+    <body>
+        <h1>Interest Calculator</h1>
+        <form name=dfc>
+            Principal : <input type=text name=pp > <br>
+            Rate      : <input type=text name=rr><br>
+            Time      : <input type=text name=tt><br>
+            <button>
+                Click Me to Calculate
+            </button><br>
+            Result   : <input type=text name=prt ><br>
+        </form>
+    </body>
+</html>
